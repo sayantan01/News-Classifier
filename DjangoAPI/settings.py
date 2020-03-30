@@ -25,7 +25,7 @@ SECRET_KEY = '_gyukqfzdv1m%um%$za@v(je0yxzdt9a$6#uq)9y2f%g1sa2hw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['thawing-caverns-28754.herokuapp.com']
+ALLOWED_HOSTS = ['thawing-caverns-28754.herokuapp.com','*']
 
 
 # Application definition
