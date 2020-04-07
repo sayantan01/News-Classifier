@@ -25,7 +25,7 @@ SECRET_KEY = '_gyukqfzdv1m%um%$za@v(je0yxzdt9a$6#uq)9y2f%g1sa2hw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['thawing-caverns-28754.herokuapp.com','*']
 
 
 # Application definition
@@ -75,13 +75,13 @@ WSGI_APPLICATION = 'DjangoAPI.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-"""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-}"""
-DATABASES = {
+}
+"""DATABASES = {
     'default': {
         'ENGINE':'django.db.backends.postgresql_psycopg2',
         'NAME':'mydb',
@@ -90,7 +90,7 @@ DATABASES = {
         'HOST':'localhost',
         'PORT':'5432'
     }
-}
+}"""
 
 
 # Password validation
@@ -130,3 +130,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+import dj_database_url 
+prod_db  =  dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
+
