@@ -68,15 +68,15 @@
 		<form action='' method='post' id="form" onsubmit="alert('scroll down to see the status')">
 			{% csrf_token %}
 			<b>Number :</b>   
-			<input type="number" name="number" placeholder="Enter News id no."><br />
+			<input type="number" name="number" placeholder="Enter News id no." required><br />
 			<b>Headline :</b>   
-			<input type="text" name="headline" placeholder="Enter the Headline"><br />
+			<input type="text" name="headline" placeholder="Enter the Headline" required><br />
 			<b>Name :</b>
-			<input type="text" name="name" placeholder="Enter Reporter's name"><br />
+			<input type="text" name="name" placeholder="Enter Reporter's name" required><br />
 			<b>Date :</b>   
-			<input type="text" name="date" placeholder="Enter Date"><br />
+			<input type="text" name="date" placeholder="Enter Date" required><br />
 			<b>Content :</b>  
-			<textarea name="content" maxlength=6000 placeholder="Enter the news" ></textarea> <br /><br />
+			<textarea name="content" placeholder="Enter the news(Max 1000 characters)" maxlength=6000 required></textarea> <br /><br />
 			<input type="submit" value="Upload News">
 		
 		</form>
