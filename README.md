@@ -8,3 +8,5 @@ Model Training - Keras Neural Model,
 UI Building - DJango Framework.
 
 Prediction accuracy on Test dataset: 98% (approx.)
+
+For the ML model code, check news_classify.ipynb file
