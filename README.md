@@ -1,5 +1,5 @@
 # News-Classifier
-Machine Learning model for classification of news data.
+Machine Learning based framework for classification of news data.
 
 - Feature Extraction - Gensim Doc2Vec
 
