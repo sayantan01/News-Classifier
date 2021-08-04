@@ -3,7 +3,7 @@ Machine Learning model for classification of news data.
 
 Feature Extraction - Gensim Doc2Vec,
 
-Model Training - Keras Neural Model,
+Model Training - sklearn Logistic Regression, Keras Neural Model
 
 UI Building - DJango Framework.
 
